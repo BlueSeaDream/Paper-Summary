@@ -2,7 +2,7 @@
 
 **Title:** Focal Loss for Dense Object Detection
 
-**Authors:** Tsung-Yi Lin Priya Goyal Ross Girshick Kaiming He Piotr Dollar
+**Authors:** Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollar
 
 **Address:** Facebook AI Research
 
