@@ -4,4 +4,4 @@ Address: Facebook AI Research
 "Publication": https://arxiv.org/pdf/1708.02002.pdf
 
 | Network | Model Size | Average Percision | Time |
-| ------------------------------------------------|
+| --------|------------|-------------------|------|
