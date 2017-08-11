@@ -19,6 +19,12 @@ Through a sequence of advances, this two-stage framework consistently achieves t
 (e.g., 1-2k), filtering out most background samples. In the second classification stage, sampling heuristics, such as a
 fixed foreground-to-background ratio (1:3), or online hard example mining (OHEM) [30], are performed to maintain a manageable balance between foreground and background.
 
+- In contrast, a one-stage detector must process a much larger set of candidate object locations regularly sampled
+across an image. In practice this often amounts to enumerating ~100k locations that densely cover spatial positions,
+scales, and aspect ratios. While similar sampling heuristics may also be applied, they are inefficient as the training
+procedure is still dominated by easily classified background examples. This inefficiency is a classic problem in object
+detection that is typically addressed via techniques such as bootstrapping or hard example mining.
+
 
 | Network | Model Size | Average Percision | Time (ms) | Comments |
 | --------|------------|-------------------|------|--|
