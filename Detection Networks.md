@@ -9,6 +9,9 @@
 **Publication:** https://arxiv.org/pdf/1708.02002.pdf
 
 
-| Network | Model Size | Average Percision | Time (ms) |
-| --------|------------|-------------------|------|
-| YoloV2 | -- | 21.6 | 25 |
+| Network | Model Size | Average Percision | Time (ms) | Comments |
+| --------|------------|-------------------|------|--|
+| YoloV2 | -- | 21.6 | 25 | |
+| SSD513 | -- | 31.2 | 125 | |
+| DSSD513 | -- |33.2 | 156 | |
+| FPN FRCN | -- |36.2 | 172 | |
