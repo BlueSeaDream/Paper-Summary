@@ -8,8 +8,8 @@
   
   - Neural Network Architectures
   
-https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba
+  https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba
 
 - ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation
 
-https://arxiv.org/pdf/1606.02147.pdf
+  https://arxiv.org/pdf/1606.02147.pdf
