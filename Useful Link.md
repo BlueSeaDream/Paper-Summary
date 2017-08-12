@@ -2,6 +2,6 @@
 
   https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
 
-- RoomNet: End-to-End Room Layout Estimation
+- RoomNet: End-to-End Room Layout Estimation (LeapMotion )
 
   https://arxiv.org/pdf/1703.06241.pdf
