@@ -38,3 +38,21 @@ detection that is typically addressed via techniques such as bootstrapping or ha
 |RetinaNet-50-500 | | 32.5 | 73 | |
 |RetinNet-101-500 | | 34.4 | 90 | |
 |RetinaNet-101-800 | | 37.8 | 198 | |
+
+## Resnet
+
+**Title:** Deep Residual Learning for Image Recognition
+
+**Authors:** Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun
+
+**Address:** Microsoft Research
+
+**Publication:** https://arxiv.org/abs/1512.03385
+
+**Excerption**
+
+- Test 
+
+
+
+
