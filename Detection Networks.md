@@ -53,6 +53,18 @@ detection that is typically addressed via techniques such as bootstrapping or ha
 
 - Test 
 
+## YOLOV2:
+**Titel:** YOLO9000 Better, Faster, Stronger
 
+**Authors:** Joseph Redmon and Ali Farhadi
 
+**Address:** University of Washington, Allen Institute for AI
 
+**Publication:** http://pjreddie.com/yolo9000
+
+**Excerption**
+
+- Batch Normalization. Batch normalization leads to significant improvements in convergence while eliminating the
+need for other forms of regularization [7]. By adding batch normalization on all of the convolutional layers in YOLO
+we get more than 2% improvement in mAP. Batch normalization  also  helps  regularize  the  model. With  batch  nor-
+malization we can remove dropout from the model without overfitting.
