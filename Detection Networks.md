@@ -64,7 +64,10 @@ detection that is typically addressed via techniques such as bootstrapping or ha
 
 **Excerption**
 
-- Batch Normalization. Batch normalization leads to significant improvements in convergence while eliminating the
+- **Batch Normalization** Batch normalization leads to significant improvements in convergence while eliminating the
 need for other forms of regularization [7]. By adding batch normalization on all of the convolutional layers in YOLO
 we get more than 2% improvement in mAP. Batch normalization  also  helps  regularize  the  model. With  batch  nor-
 malization we can remove dropout from the model without overfitting.
+
+- **High Resolution Classifier** 
+For YOLOv2 we first fine tune the classification network at the full 448×448 resolution for 10 epochs on ImageNet. This gives the network time to adjust its filters to work better on higher resolution input. We then fine tune the resulting network on detection. This high resolution classification network gives us an increase of almost 4% mAP.
