@@ -28,7 +28,7 @@ detection that is typically addressed via techniques such as bootstrapping or ha
 
 | Network | Model Size (MB) | Average Percision | Top1 | Top5 | Time (ms) | Comments |
 | --------|------------|-------------------|------|------|-----------|----------|
-| YoloV2 | | 21.6 | 25 | | | |
+| YoloV2 | | 21.6 | | | 25 | | | |
 | SSD (321x321) | | 28.0 | 61 | | | |
 | DSSD (321x321) | | 28.0 | 85 | | | |
 | R-FCN | | 29.9 | 85 | | | |
