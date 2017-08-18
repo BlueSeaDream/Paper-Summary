@@ -37,10 +37,10 @@ detection that is typically addressed via techniques such as bootstrapping or ha
 | FPN FRCN | |36.2 | | | 172 | | | |
 | RetinaNet-50-500 | | 32.5 | | | 73 | | | |
 | RetinNet-101-500 | | 34.4 | | | 90 | | | |
-| RetinaNet-101-800 | | 37.8 | | | 198 | | | |
-| DenseNet 121 | 30.8 | | 74.21 | | 92.19 | | |
-| MobileNet | 16.2 | | 70.81 | | 89.85 | | |
-| ShuffleNet | 7.0 | | 62.8 | | 84.7 | | |
+| RetinaNet-101-800 | | 37.8 | | | 198 | | |
+| DenseNet 121 | 30.8 | | 74.21 | 92.19 | | |
+| MobileNet | 16.2 | | 70.81 | 89.85 | | |
+| ShuffleNet | 7.0 | | 62.8 | 84.7 | | |
 | ResNet | 102.5 | | 77 | 90.1 | | |
 
 
