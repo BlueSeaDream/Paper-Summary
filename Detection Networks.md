@@ -44,7 +44,7 @@ detection that is typically addressed via techniques such as bootstrapping or ha
 | ResNet | 102.5 | | 77 | 90.1 | | |
 
 
-## Resnet|  
+## Resnet  
 
 **Title:** Deep Residual Learning for Image Recognition
 
