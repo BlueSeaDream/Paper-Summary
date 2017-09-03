@@ -83,4 +83,9 @@ bring finer grained features in from earlier in the network
 - **Reorg Layer**
 make finer grained features match the feature map size at the later layer. The end feature map is 13x13, the feature map from earlier is 26x26x512. The reorg layer maps the 26x26x512 feature map onto a 13x13x2048 feature map so that it can be concatenated with the feature maps at 13x13 resolution.
 
+https://medium.com/towards-data-science/yolo-you-only-look-once-real-time-object-detection-explained-492dc9230006
+
+http://blog.csdn.net/hrsstudy/article/details/65447947
+
+
 
