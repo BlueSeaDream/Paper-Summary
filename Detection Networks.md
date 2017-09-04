@@ -77,6 +77,7 @@ malization we can remove dropout from the model without overfitting.
 - **High Resolution Classifier** 
 For YOLOv2 we first fine tune the classification network at the full 448×448 resolution for 10 epochs on ImageNet. This gives the network time to adjust its filters to work better on higher resolution input. We then fine tune the resulting network on detection. This high resolution classification network gives us an increase of almost 4% mAP.
 
+
 - **Route Layer**
 bring finer grained features in from earlier in the network
 
@@ -86,6 +87,24 @@ make finer grained features match the feature map size at the later layer. The e
 https://medium.com/towards-data-science/yolo-you-only-look-once-real-time-object-detection-explained-492dc9230006
 
 http://blog.csdn.net/hrsstudy/article/details/65447947
+
+
+## Mask R-CNN
+- **RoIAlign** RoIPool [12] is a standard operation for extracting a small feature map (e.g., 7×7) from each RoI. RoIPool
+first quantizes a floating-number RoI to the discrete granularity of the feature map, this quantized RoI is then subdivided
+into spatial bins which are themselves quantized, and finally feature values covered by each bin are aggregated
+(usually by max pooling). Quantization is performed, e.g., on a continuous coordinate x by computing [x/16], where
+16 is a feature map stride and [·] is rounding; likewise, quantization is performed when dividing into bins (e.g., 7×7).
+These quantizations introduce misalignments between the RoI and the extracted features. While this may not impact
+classification, which is robust to small translations, it has a large negative effect on predicting pixel-accurate masks.
+To address this, we propose an RoIAlign layer that removes the harsh quantization of RoIPool, properly aligning
+the extracted features with the input. Our proposed change is simple: we avoid any quantization of the RoI boundaries
+or bins (i.e., we use x/16 instead of [x/16]). We use bilinear interpolation [22] to compute the exact values of the input
+features at four regularly sampled locations in each RoI bin, and aggregate the result (using max or average).
+
+An evaluation of our proposed RoIAlign layer is shown in Table 2c. For this experiment we use the ResNet-50-C4 backbone, which has stride 16. RoIAlign improves AP by about 3 points over RoIPool, with much of the gain coming at high IoU (AP75). RoIAlign is insensitive to max/average pool; we use average in the rest of the paper.   
+
+
 
 
 
