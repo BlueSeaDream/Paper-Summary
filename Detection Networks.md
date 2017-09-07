@@ -88,6 +88,11 @@ https://medium.com/towards-data-science/yolo-you-only-look-once-real-time-object
 
 http://blog.csdn.net/hrsstudy/article/details/65447947
 
+-**Region Layer**
+YOLO_V2的region_layer LOSS损失计算源码解读
+
+http://blog.csdn.net/dongapple/article/details/76230455
+
 
 ## Mask R-CNN
 - **RoIAlign** RoIPool [12] is a standard operation for extracting a small feature map (e.g., 7×7) from each RoI. RoIPool
