@@ -1,5 +1,6 @@
 ### Depthwise Separable Convolution
 
+https://medium.com/towards-data-science/types-of-convolutions-in-deep-learning-717013397f4d
 
 This will perform a spatial convolution while keeping the channels separate and then follow with a depthwise convolution.
 In my opinion, it can be best understood with an example. Let’s say we have a 3x3 convolutional layer on 16 input channels
