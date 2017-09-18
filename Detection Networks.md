@@ -36,7 +36,7 @@ detection that is typically addressed via techniques such as bootstrapping or ha
 | DSSD (513x513) | |33.2 | | | 156 | | | |
 | FPN FRCN | |36.2 | | | 172 | | | |
 | RetinaNet-50-500 | | 32.5 | | | 73 | | | |
-| RetinNet-101-500 | | 34.4 | | | 90 | | | |
+| RetinaNet-101-500 | | 34.4 | | | 90 | | | |
 | RetinaNet-101-800 | | 37.8 | | | 198 | | |
 | DenseNet 121 | 30.8 | | 74.21 | 92.19 | | |
 | MobileNet | 16.2 | | 70.81 | 89.85 | | |
