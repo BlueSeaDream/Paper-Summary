@@ -24,8 +24,16 @@ convolutions are also used for mobile devices because of their efficient use of 
 
 https://arxiv.org/pdf/1409.1556.pdf
 
-It is easy to see that a stack of two
-3×3 conv. layers (without spatial pooling in between) has an effective receptive field of 5×5; three such layers have a 7 × 7 effective receptive field. So what have we gained by using, for instance, a stack of three 3×3 conv. layers instead of a single 7×7 layer? First, we incorporate three non-linear rectification layers instead of a single one, which makes the decision function more discriminative. Second, we decrease the number of parameters: assuming that both the input and the output of a three-layer 3 × 3 convolution stack has C channels, the stack is parametrised by 3(3^2C^2)= 27C^2 weights; at the same time, a single 7 × 7 conv. layer would require 7^2C^2 = 49C^2 parameters, i.e. 81% more. This can be seen as imposing a regularization on the 7 × 7 conv. filters, forcing them to have a decomposition through the 3 × 3 filters (with non-linearity injected in between). 
+It is easy to see that a stack of two 3×3 conv. layers (without spatial pooling in between) has an effective receptive field of 5×5; three such layers have a 7 × 7 effective receptive field. So what have we gained by using, for instance, a stack of three 3×3 conv. layers instead of a single 7×7 layer? First, we incorporate three non-linear rectification layers instead of a single one, which makes the decision function more discriminative. Second, we decrease the number of parameters: assuming that both the input and the output of a three-layer 3 × 3 convolution stack has C channels, the stack is parametrised by 3(3^2C^2)= 27C^2 weights; at the same time, a single 7 × 7 conv. layer would require 7^2C^2 = 49C^2 parameters, i.e. 81% more. This can be seen as imposing a regularization on the 7 × 7 conv. filters, forcing them to have a decomposition through the 3 × 3 filters (with non-linearity injected in between). 
 
 
 The incorporation of 1 × 1 conv. layers (configuration C, Table 1) is a way to increase the nonlinearity of the decision function without affecting the receptive fields of the conv. layers. Eventhough in our case the 1 × 1 convolution is essentially a linear projection onto the space of the same dimensionality (the number of input and output channels is the same), an additional non-linearity is introduced by the rectification function. It should be noted that 1×1 conv. layers have recently been utilised in the “Network in Network” architecture of Lin et al. (2014).
+
+###Darknet19 in YoloV2
+
+https://arxiv.org/pdf/1612.08242.pdf
+
+Darknet-19. We propose a new classification model to be used as the base of YOLOv2. Our model builds off of prior work on network design as well as common knowledge in the field. Similar to the VGG models we use mostly 3x3 filters and double the number of channels after every pooling step. Following the work on Network in Network (NIN) we use global average pooling to make predictions
+as well as 1x1 filters to compress the feature representation between 3x3 convolutions. We use batch normalization to stabilize training, speed up convergence, and regularize the model. Our final model, called Darknet-19, has 19 convolutional layers and 5 maxpooling layers. For a full description see Table 6. Darknet-19 only requires 5.58 billion operations to process an image yet achieves 72:9% top-1 accuracy and 91:2% top-5 accuracy on ImageNet.
+
+
