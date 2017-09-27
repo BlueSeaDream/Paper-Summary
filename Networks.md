@@ -29,7 +29,7 @@ It is easy to see that a stack of two 3×3 conv. layers (without spatial pooling
 
 The incorporation of 1 × 1 conv. layers (configuration C, Table 1) is a way to increase the nonlinearity of the decision function without affecting the receptive fields of the conv. layers. Eventhough in our case the 1 × 1 convolution is essentially a linear projection onto the space of the same dimensionality (the number of input and output channels is the same), an additional non-linearity is introduced by the rectification function. It should be noted that 1×1 conv. layers have recently been utilised in the “Network in Network” architecture of Lin et al. (2014).
 
-###Darknet19 in YoloV2
+### Darknet19 in YoloV2
 
 https://arxiv.org/pdf/1612.08242.pdf
 
