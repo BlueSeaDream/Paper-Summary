@@ -93,3 +93,15 @@ Open Image是一个包含900万张图像URL的数据集，里面的图片通过�
 
 数据集大小：~1.5GB（只是链接，不包括图片）
 下载地址：https://github.com/openimages/dataset
+
+
+### Wider Face
+
+WIDER FACE dataset is a face detection benchmark dataset, of which images are selected from the publicly available WIDER dataset. We choose 32,203 images and label 393,703 faces with a high degree of variability in scale, pose and occlusion as depicted in the sample images. WIDER FACE dataset is organized based on 61 event classes. For each event class, we randomly select 40%/10%/50% data as training, validation and testing sets. We adopt the same evaluation metric employed in the PASCAL VOC dataset. Similar to MALF and Caltech datasets, we do not release bounding box ground truth for the test images. Users are required to submit final prediction files, which we shall proceed to evaluate.
+
+http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/
+
+
+### IJB-B
+The IARPA Janus Benchmark-B face challenge (IJB-B) defines eight challenges addressing verification, identification, detection, clustering and processing of crowded images.  This is supported by a the IJB-B set of 67000 face images, 7000 face videos, and 10000 non-face images.
+
