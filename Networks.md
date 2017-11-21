@@ -36,4 +36,22 @@ https://arxiv.org/pdf/1612.08242.pdf
 Darknet-19. We propose a new classification model to be used as the base of YOLOv2. Our model builds off of prior work on network design as well as common knowledge in the field. Similar to the VGG models we use mostly 3x3 filters and double the number of channels after every pooling step. Following the work on Network in Network (NIN) we use global average pooling to make predictions
 as well as 1x1 filters to compress the feature representation between 3x3 convolutions. We use batch normalization to stabilize training, speed up convergence, and regularize the model. Our final model, called Darknet-19, has 19 convolutional layers and 5 maxpooling layers. For a full description see Table 6. Darknet-19 only requires 5.58 billion operations to process an image yet achieves 72:9% top-1 accuracy and 91:2% top-5 accuracy on ImageNet.
 
+### DenseNet
 
+https://arxiv.org/pdf/1608.06993.pdf
+
+As CNNs become increasingly deep, a new research problem emerges: as information about the input or gradient
+passes through many layers, it can vanish and “wash out” by the time it reaches the end (or beginning) of the
+network.
+
+We propose an architecture that distills this insight into a simple connectivity pattern: to ensure maximum
+information flow between layers in the network, we connect all layers (with matching feature-map sizes) directly
+with each other. To preserve the feed-forward nature, each layer obtains additional inputs from all preceding layers
+and passes on its own feature-maps to all subsequent layers.
+
+A possibly counter-intuitive effect of this dense connectivity pattern is that it requires fewer parameters than traditional
+convolutional networks, as there is no need to relearn redundant feature-maps. 
+
+Besides better parameter efficiency, one big advantage of DenseNets is their improved flow of information and gradients throughout the network, which makes them easy to train. Each layer has direct access to the gradients from the loss function and the original input signal, leading to an implicit deep supervision.
+
+Further, we also observe that dense connections have a regularizing effect, which reduces overfitting on tasks with smaller training set sizes.
